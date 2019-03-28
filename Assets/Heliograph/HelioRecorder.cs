@@ -11,10 +11,12 @@ namespace Heliograph
         public MicrophoneSettings settings;
         private AudioClip clipToTransmit;
         private int lastSampleOffset;
+        private HelioPlayer helioPlayer;
 
         private void Start()
         {
             if (!isLocalPlayer) return;
+            helioPlayer = GetComponent<HelioPlayer>();
             clipToTransmit = Microphone.Start(null, true, 10, MicrophoneSettings.Frequency);
         }
 
@@ -68,7 +70,7 @@ namespace Heliograph
         [TargetRpc]
         public void TargetPlayAudio(NetworkConnection target, AudioPacket audio)
         {
-            GetComponent<HelioPlayer>().UpdateSoundSamples(audio);
+            helioPlayer.UpdateSoundSamples(audio);
         }
     }
 }
