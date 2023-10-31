@@ -1,8 +1,13 @@
 # Heliograph
-A VoIP implementation for Unity based on vis2k's Mirror HLAPI
+
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A VoIP implementation for Unity based on the [Mirror HLAPI Project](https://github.com/MirrorNetworking/Mirror)
+
+**Caution: I implemented this years ago. I don't know if any of this still works. Use at your own risk.**
 
 ## Summary
-This is a very basic implementation of a VoIP service using vis2k's [Mirror](https://github.com/vis2k/Mirror) project.
+This is a very basic implementation of a VoIP service using vis2k's [Mirror](https://github.com/MirrorNetworking/Mirror) project.
 At the moment this is as "barebones" as it gets but I could not find another (up to date) implementation of this. So I thought I might as well upload it. This whole thing was done in ~ 1h (including research) and is VERY basic, so don't expect too much.
 
 ## Usage
@@ -21,6 +26,3 @@ At the moment this is as "barebones" as it gets but I could not find another (up
 
 ## Contribute
 Contributions are very welcome! Just start a PR.
-
-## License
-MIT. Do whatever you want.
